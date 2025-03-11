@@ -26,7 +26,7 @@ The testing will validate the core functionalities of the portfolio web applicat
 - Verify that existing functionalities remain unaffected after releases through regression testing at the end of each sprint.
 
 ### 5. Features to be Tested
-[JIRA PROJECT](https://bootcampqareyes.atlassian.net/jira/software/projects/CVP/boards/1)
+[JIRA PROJECT](https://defautor.atlassian.net/jira/software/projects/QA/boards/1/backlog)
 The following user stories are included in the testing scope:
 1. **Header Section**: Includes links to LinkedIn and GitHub, and displays the full name and title.
 2. **About Me Section**: Presents a personal introduction.
@@ -64,5 +64,5 @@ Release will be consider ready when:
 - **[Regression Test Execution Report](regressiontestreport.pdf)**: A report outlining the results of regression tests executed at the end of each sprint.
 
 ## AUTHOR
-David Bernardo, QA 
+David Bernardo, QA
 [LinkedIn Profile](https://www.linkedin.com/in/david-bernardo-sanz/)
