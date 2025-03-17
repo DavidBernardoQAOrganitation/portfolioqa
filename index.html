@@ -1,70 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio David Bernardo QA">
-  <meta name="author" content="David Bernardo">
-  <title>David Bernardo - Portfolio</title>
-  <link href="style.css" rel="stylesheet">
-  <!-- Importar Font Awesome para los iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio QA - David Bernardo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header>
+        <h1>David Bernardo</h1>
+        <h2>QA Analyst</h2>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="links">
+            <a href="https://github.com/DavidBernardoQAOrganitation/portfolioqa" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/david-bernardo-sanz/" target="_blank">LinkedIn</a>
+        </div>
+    </header>
 
-  <header>
-    <h1>David Bernardo</h1>
-    <p>QA Analyst</p>
-    <p>
-      <a href="https://github.com/" title="GitHub" class="fa fa-github fa-2x"></a>
-      <a href="https://www.linkedin.com/" title="LinkedIn" class="fa fa-linkedin fa-2x"></a>
-    </p>
-  </header>
-
-  <main>
-    <section>
-      <h2><i class="fa fa-user"></i> About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Soy David Bernardo, un apasionado del mundo del testing y la calidad de software...</p>
+        <h3>Habilidades Blandas</h3>
+        <ul>
+            <li>Pensamiento analítico y resolución de problemas</li>
+            <li>Atención al detalle</li>
+            <li>Trabajo en equipo y comunicación efectiva</li>
+            <li>Adaptabilidad a nuevas tecnologías y metodologías</li>
+            <li>Mentalidad crítica para detectar errores antes de que lleguen al usuario</li>
+        </ul>
     </section>
 
-    <section>
-      <h2><i class="fa fa-folder-open"></i> Projects</h2>
-
-      <h3><a href="https://yourwebsite.com" target="_blank">Portfolio Web</a> - QA and Web
-        Development</h3>
-      <p>Developed a responsive web portfolio using HTML5 and CSS3, with version control managed via GitHub. Managed the project with Jira following Agile Scrum methodology. Designed test cases using Gherkin and BDD principles. Executed manual functional and regression tests across desktop and mobile platforms, tracked results with a test management tool, and reported and resolved bugs using Jira.</p>
-      <p><em> BDD, GHERKIN, TEST DESIGN, TEST EXECUTION, JIRA, AGILE METHODOLOGIES (SCRUM), VISUAL STUDIO CODE, HTML5, CSS3, GITHUB </em></p>
-
-      <h3><a href="https://yourwebsite.com" target="_blank">JIRA API</a> - QA API testing
-      </h3>
-      <p>Designed and executed automated API tests for the Jira API using Postman, based on Jira API documentation. Verified various endpoints, including creating, retrieving, updating, and deleting comments. Tested both positive scenarios and negative cases.</p>
-      <p><em>POSTMAN, API TESTING</em></p>
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Portfolio QA</h3>
+            <p><strong>Función:</strong> QA Tester</p>
+            <p><strong>Descripción:</strong> Desarrollo y testing de mi propio portafolio...</p>
+            <p><strong>Herramientas y metodologías:</strong> Agile Scrum, Gherkin, Jira, AssertThat</p>
+            <a href="https://github.com/DavidBernardoQAOrganitation/portfolioqa" target="_blank">Ver en GitHub</a>
+        </div>
     </section>
 
-    <section>
-      <h2><i class="fa fa-graduation-cap"></i> Education</h2>
-      <h3> Bootcamp QA Web, API, Automation</h3>
-      <p>Bootcamp QA - 2024</p>
+    <section id="formacion">
+        <h2>Formación</h2>
+        <p><strong>BOOTCAMP QA MANUAL</strong> - BOOTCAMPQA (2025)</p>
     </section>
 
-    <section>
-      <h2><i class="fa fa-envelope"></i> Contact</h2>
-       <form action="https://docs.google.com/forms/d/e/1FAIpQLSelAH07_exqwX5BQ6-Pu5iBp-cmEMJmW2APO24Xlw60aTkpVQ/formResponse" method="POST">
-        <input type="email" id="name" name="entry.1564292246" placeholder="Email"><br>
-        <input type="text" id="email" name="entry.877029958" placeholder="Subject"><br>
-        <textarea rows="4" id="message" name="entry.465720647" placeholder="Your message"></textarea><br>
-        <button type="submit"><i class="fa fa-paper-plane"></i> Send message</button>
-      </form>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" maxlength="40" required>
+            
+            <label for="mensaje">Comentario:</label>
+            <textarea id="mensaje" maxlength="500" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; All rights reserved.</p>
-  </footer>
-
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            const email = document.getElementById('email').value;
+            const asunto = document.getElementById('asunto').value;
+            const mensaje = document.getElementById('mensaje').value;
+            
+            if (!email || !asunto || !mensaje) {
+                alert('Todos los campos son obligatorios');
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
-
 </html>
+
